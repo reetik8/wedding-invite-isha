@@ -859,7 +859,7 @@
 
         /* ---------- petals ---------- */
         var canvas = document.getElementById("petals");
-        if (!reduceMotion && canvas.getContext) {
+        if (canvas.getContext) {
           var ctx = canvas.getContext("2d");
           var W = 0, H = 0, petals = [], scrollBoost = 0, lastY = window.scrollY;
           var COLORS = [
